@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16A82E912A8F34C90095F0F5 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A82E902A8F34C90095F0F5 /* UserDefaultsManager.swift */; };
+		16A82E942A8F35CE0095F0F5 /* GifHandlerManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A82E932A8F35CE0095F0F5 /* GifHandlerManagerProtocol.swift */; };
+		16A82E962A8F35EB0095F0F5 /* GifImagesHandlerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A82E952A8F35EB0095F0F5 /* GifImagesHandlerManager.swift */; };
+		16A82E982A8F3AF70095F0F5 /* FavouriteGifHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A82E972A8F3AF70095F0F5 /* FavouriteGifHandler.swift */; };
+		16A82E9A2A8F42960095F0F5 /* FavouriteVcVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A82E992A8F42960095F0F5 /* FavouriteVcVM.swift */; };
+		16A8B70E2A8D012700C71625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B70D2A8D012700C71625 /* AppDelegate.swift */; };
+		16A8B7102A8D012700C71625 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B70F2A8D012700C71625 /* SceneDelegate.swift */; };
+		16A8B7122A8D012700C71625 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B7112A8D012700C71625 /* ViewController.swift */; };
+		16A8B7152A8D012700C71625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A8B7132A8D012700C71625 /* Main.storyboard */; };
+		16A8B7172A8D012800C71625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A8B7162A8D012800C71625 /* Assets.xcassets */; };
+		16A8B71A2A8D012800C71625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A8B7182A8D012800C71625 /* LaunchScreen.storyboard */; };
+		16A8B7252A8D012800C71625 /* EydsCanadaRecruitmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B7242A8D012800C71625 /* EydsCanadaRecruitmentTests.swift */; };
+		16A8B72F2A8D012800C71625 /* EydsCanadaRecruitmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B72E2A8D012800C71625 /* EydsCanadaRecruitmentUITests.swift */; };
+		16A8B7312A8D012800C71625 /* EydsCanadaRecruitmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B7302A8D012800C71625 /* EydsCanadaRecruitmentUITestsLaunchTests.swift */; };
+		16A8B73F2A8D039D00C71625 /* TabBarVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B73E2A8D039D00C71625 /* TabBarVc.swift */; };
+		16A8B7412A8D042D00C71625 /* FavouriteVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B7402A8D042D00C71625 /* FavouriteVc.swift */; };
+		16A8B7432A8D043E00C71625 /* GifListVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B7422A8D043E00C71625 /* GifListVc.swift */; };
+		16A8B7492A8D05E400C71625 /* GifDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B7472A8D05E400C71625 /* GifDisplayCell.swift */; };
+		16A8B74A2A8D05E400C71625 /* GifDisplayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A8B7482A8D05E400C71625 /* GifDisplayCell.xib */; };
+		16A8B74D2A8D063A00C71625 /* GlobalEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A8B74C2A8D063A00C71625 /* GlobalEnums.swift */; };
+		16D914F72A8DDC6400A924C1 /* ApiEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D914F62A8DDC6400A924C1 /* ApiEndPoints.swift */; };
+		16D9154D2A8E225000A924C1 /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9154C2A8E225000A924C1 /* NetworkOperation.swift */; };
+		16D9154F2A8E226600A924C1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9154E2A8E226600A924C1 /* NetworkManager.swift */; };
+		16D915512A8E227900A924C1 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D915502A8E227900A924C1 /* APIResult.swift */; };
+		16D915532A8E22FD00A924C1 /* GiftListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D915522A8E22FD00A924C1 /* GiftListModel.swift */; };
+		16D915562A8E238F00A924C1 /* GifsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D915552A8E238F00A924C1 /* GifsRepository.swift */; };
+		16D915582A8E23AB00A924C1 /* GifsNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D915572A8E23AB00A924C1 /* GifsNetworkManager.swift */; };
+		16D9155A2A8E23C600A924C1 /* GifsNetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D915592A8E23C600A924C1 /* GifsNetworkManagerProtocol.swift */; };
+		16D9155C2A8E240F00A924C1 /* GiftListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9155B2A8E240F00A924C1 /* GiftListVM.swift */; };
+		16D9155E2A8E24A200A924C1 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9155D2A8E24A200A924C1 /* UIImage+Gif.swift */; };
+		16D9156C2A8E8EC000A924C1 /* GifListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D9156A2A8E8EC000A924C1 /* GifListCollectionCell.swift */; };
+		16D9156D2A8E8EC000A924C1 /* GifListCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D9156B2A8E8EC000A924C1 /* GifListCollectionCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16A8B7212A8D012800C71625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16A8B7022A8D012700C71625 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16A8B7092A8D012700C71625;
+			remoteInfo = EydsCanadaRecruitment;
+		};
+		16A8B72B2A8D012800C71625 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16A8B7022A8D012700C71625 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16A8B7092A8D012700C71625;
+			remoteInfo = EydsCanadaRecruitment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16A82E902A8F34C90095F0F5 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		16A82E932A8F35CE0095F0F5 /* GifHandlerManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifHandlerManagerProtocol.swift; sourceTree = "<group>"; };
+		16A82E952A8F35EB0095F0F5 /* GifImagesHandlerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImagesHandlerManager.swift; sourceTree = "<group>"; };
+		16A82E972A8F3AF70095F0F5 /* FavouriteGifHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteGifHandler.swift; sourceTree = "<group>"; };
+		16A82E992A8F42960095F0F5 /* FavouriteVcVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVcVM.swift; sourceTree = "<group>"; };
+		16A8B70A2A8D012700C71625 /* EydsCanadaRecruitment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EydsCanadaRecruitment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16A8B70D2A8D012700C71625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		16A8B70F2A8D012700C71625 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		16A8B7112A8D012700C71625 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		16A8B7142A8D012700C71625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16A8B7162A8D012800C71625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16A8B7192A8D012800C71625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16A8B71B2A8D012800C71625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16A8B7202A8D012800C71625 /* EydsCanadaRecruitmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EydsCanadaRecruitmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16A8B7242A8D012800C71625 /* EydsCanadaRecruitmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EydsCanadaRecruitmentTests.swift; sourceTree = "<group>"; };
+		16A8B72A2A8D012800C71625 /* EydsCanadaRecruitmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EydsCanadaRecruitmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16A8B72E2A8D012800C71625 /* EydsCanadaRecruitmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EydsCanadaRecruitmentUITests.swift; sourceTree = "<group>"; };
+		16A8B7302A8D012800C71625 /* EydsCanadaRecruitmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EydsCanadaRecruitmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		16A8B73E2A8D039D00C71625 /* TabBarVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVc.swift; sourceTree = "<group>"; };
+		16A8B7402A8D042D00C71625 /* FavouriteVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVc.swift; sourceTree = "<group>"; };
+		16A8B7422A8D043E00C71625 /* GifListVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifListVc.swift; sourceTree = "<group>"; };
+		16A8B7472A8D05E400C71625 /* GifDisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifDisplayCell.swift; sourceTree = "<group>"; };
+		16A8B7482A8D05E400C71625 /* GifDisplayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifDisplayCell.xib; sourceTree = "<group>"; };
+		16A8B74C2A8D063A00C71625 /* GlobalEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalEnums.swift; sourceTree = "<group>"; };
+		16D914F62A8DDC6400A924C1 /* ApiEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoints.swift; sourceTree = "<group>"; };
+		16D9154C2A8E225000A924C1 /* NetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		16D9154E2A8E226600A924C1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		16D915502A8E227900A924C1 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		16D915522A8E22FD00A924C1 /* GiftListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftListModel.swift; sourceTree = "<group>"; };
+		16D915552A8E238F00A924C1 /* GifsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifsRepository.swift; sourceTree = "<group>"; };
+		16D915572A8E23AB00A924C1 /* GifsNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifsNetworkManager.swift; sourceTree = "<group>"; };
+		16D915592A8E23C600A924C1 /* GifsNetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifsNetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		16D9155B2A8E240F00A924C1 /* GiftListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftListVM.swift; sourceTree = "<group>"; };
+		16D9155D2A8E24A200A924C1 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		16D9156A2A8E8EC000A924C1 /* GifListCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifListCollectionCell.swift; sourceTree = "<group>"; };
+		16D9156B2A8E8EC000A924C1 /* GifListCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifListCollectionCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16A8B7072A8D012700C71625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16A8B71D2A8D012800C71625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16A8B7272A8D012800C71625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16A82E922A8F35AB0095F0F5 /* GifImageHandler */ = {
+			isa = PBXGroup;
+			children = (
+				16A82E932A8F35CE0095F0F5 /* GifHandlerManagerProtocol.swift */,
+				16A82E952A8F35EB0095F0F5 /* GifImagesHandlerManager.swift */,
+			);
+			path = GifImageHandler;
+			sourceTree = "<group>";
+		};
+		16A8B7012A8D012700C71625 = {
+			isa = PBXGroup;
+			children = (
+				16A8B70C2A8D012700C71625 /* EydsCanadaRecruitment */,
+				16A8B7232A8D012800C71625 /* EydsCanadaRecruitmentTests */,
+				16A8B72D2A8D012800C71625 /* EydsCanadaRecruitmentUITests */,
+				16A8B70B2A8D012700C71625 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16A8B70B2A8D012700C71625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16A8B70A2A8D012700C71625 /* EydsCanadaRecruitment.app */,
+				16A8B7202A8D012800C71625 /* EydsCanadaRecruitmentTests.xctest */,
+				16A8B72A2A8D012800C71625 /* EydsCanadaRecruitmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16A8B70C2A8D012700C71625 /* EydsCanadaRecruitment */ = {
+			isa = PBXGroup;
+			children = (
+				16A8B70D2A8D012700C71625 /* AppDelegate.swift */,
+				16A8B70F2A8D012700C71625 /* SceneDelegate.swift */,
+				16A82E922A8F35AB0095F0F5 /* GifImageHandler */,
+				16D915542A8E237600A924C1 /* GifFeature */,
+				16D914F52A8DDC4600A924C1 /* Network */,
+				16A8B7452A8D05BB00C71625 /* Model */,
+				16A8B73D2A8D030D00C71625 /* ViewControllers */,
+				16A8B7442A8D05B400C71625 /* ViewModel */,
+				16A8B7462A8D05C200C71625 /* CustomCell */,
+				16A8B74B2A8D062000C71625 /* SuppportingFiles */,
+				16A8B7112A8D012700C71625 /* ViewController.swift */,
+				16A8B7132A8D012700C71625 /* Main.storyboard */,
+				16A8B7162A8D012800C71625 /* Assets.xcassets */,
+				16A8B7182A8D012800C71625 /* LaunchScreen.storyboard */,
+				16A8B71B2A8D012800C71625 /* Info.plist */,
+			);
+			path = EydsCanadaRecruitment;
+			sourceTree = "<group>";
+		};
+		16A8B7232A8D012800C71625 /* EydsCanadaRecruitmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				16A8B7242A8D012800C71625 /* EydsCanadaRecruitmentTests.swift */,
+			);
+			path = EydsCanadaRecruitmentTests;
+			sourceTree = "<group>";
+		};
+		16A8B72D2A8D012800C71625 /* EydsCanadaRecruitmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16A8B72E2A8D012800C71625 /* EydsCanadaRecruitmentUITests.swift */,
+				16A8B7302A8D012800C71625 /* EydsCanadaRecruitmentUITestsLaunchTests.swift */,
+			);
+			path = EydsCanadaRecruitmentUITests;
+			sourceTree = "<group>";
+		};
+		16A8B73D2A8D030D00C71625 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				16A8B73E2A8D039D00C71625 /* TabBarVc.swift */,
+				16A8B7402A8D042D00C71625 /* FavouriteVc.swift */,
+				16A8B7422A8D043E00C71625 /* GifListVc.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		16A8B7442A8D05B400C71625 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				16D9155B2A8E240F00A924C1 /* GiftListVM.swift */,
+				16A82E992A8F42960095F0F5 /* FavouriteVcVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		16A8B7452A8D05BB00C71625 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16D915522A8E22FD00A924C1 /* GiftListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16A8B7462A8D05C200C71625 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				16A8B7472A8D05E400C71625 /* GifDisplayCell.swift */,
+				16A8B7482A8D05E400C71625 /* GifDisplayCell.xib */,
+				16D9156A2A8E8EC000A924C1 /* GifListCollectionCell.swift */,
+				16D9156B2A8E8EC000A924C1 /* GifListCollectionCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		16A8B74B2A8D062000C71625 /* SuppportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				16A8B74C2A8D063A00C71625 /* GlobalEnums.swift */,
+				16D9155D2A8E24A200A924C1 /* UIImage+Gif.swift */,
+				16A82E902A8F34C90095F0F5 /* UserDefaultsManager.swift */,
+				16A82E972A8F3AF70095F0F5 /* FavouriteGifHandler.swift */,
+			);
+			path = SuppportingFiles;
+			sourceTree = "<group>";
+		};
+		16D914F52A8DDC4600A924C1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				16D914F62A8DDC6400A924C1 /* ApiEndPoints.swift */,
+				16D9154C2A8E225000A924C1 /* NetworkOperation.swift */,
+				16D9154E2A8E226600A924C1 /* NetworkManager.swift */,
+				16D915502A8E227900A924C1 /* APIResult.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		16D915542A8E237600A924C1 /* GifFeature */ = {
+			isa = PBXGroup;
+			children = (
+				16D915552A8E238F00A924C1 /* GifsRepository.swift */,
+				16D915572A8E23AB00A924C1 /* GifsNetworkManager.swift */,
+				16D915592A8E23C600A924C1 /* GifsNetworkManagerProtocol.swift */,
+			);
+			path = GifFeature;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16A8B7092A8D012700C71625 /* EydsCanadaRecruitment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16A8B7342A8D012800C71625 /* Build configuration list for PBXNativeTarget "EydsCanadaRecruitment" */;
+			buildPhases = (
+				16A8B7062A8D012700C71625 /* Sources */,
+				16A8B7072A8D012700C71625 /* Frameworks */,
+				16A8B7082A8D012700C71625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EydsCanadaRecruitment;
+			productName = EydsCanadaRecruitment;
+			productReference = 16A8B70A2A8D012700C71625 /* EydsCanadaRecruitment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16A8B71F2A8D012800C71625 /* EydsCanadaRecruitmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16A8B7372A8D012800C71625 /* Build configuration list for PBXNativeTarget "EydsCanadaRecruitmentTests" */;
+			buildPhases = (
+				16A8B71C2A8D012800C71625 /* Sources */,
+				16A8B71D2A8D012800C71625 /* Frameworks */,
+				16A8B71E2A8D012800C71625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16A8B7222A8D012800C71625 /* PBXTargetDependency */,
+			);
+			name = EydsCanadaRecruitmentTests;
+			productName = EydsCanadaRecruitmentTests;
+			productReference = 16A8B7202A8D012800C71625 /* EydsCanadaRecruitmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16A8B7292A8D012800C71625 /* EydsCanadaRecruitmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16A8B73A2A8D012800C71625 /* Build configuration list for PBXNativeTarget "EydsCanadaRecruitmentUITests" */;
+			buildPhases = (
+				16A8B7262A8D012800C71625 /* Sources */,
+				16A8B7272A8D012800C71625 /* Frameworks */,
+				16A8B7282A8D012800C71625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16A8B72C2A8D012800C71625 /* PBXTargetDependency */,
+			);
+			name = EydsCanadaRecruitmentUITests;
+			productName = EydsCanadaRecruitmentUITests;
+			productReference = 16A8B72A2A8D012800C71625 /* EydsCanadaRecruitmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16A8B7022A8D012700C71625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					16A8B7092A8D012700C71625 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					16A8B71F2A8D012800C71625 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 16A8B7092A8D012700C71625;
+					};
+					16A8B7292A8D012800C71625 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 16A8B7092A8D012700C71625;
+					};
+				};
+			};
+			buildConfigurationList = 16A8B7052A8D012700C71625 /* Build configuration list for PBXProject "EydsCanadaRecruitment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16A8B7012A8D012700C71625;
+			productRefGroup = 16A8B70B2A8D012700C71625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16A8B7092A8D012700C71625 /* EydsCanadaRecruitment */,
+				16A8B71F2A8D012800C71625 /* EydsCanadaRecruitmentTests */,
+				16A8B7292A8D012800C71625 /* EydsCanadaRecruitmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16A8B7082A8D012700C71625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A8B71A2A8D012800C71625 /* LaunchScreen.storyboard in Resources */,
+				16A8B7172A8D012800C71625 /* Assets.xcassets in Resources */,
+				16A8B7152A8D012700C71625 /* Main.storyboard in Resources */,
+				16A8B74A2A8D05E400C71625 /* GifDisplayCell.xib in Resources */,
+				16D9156D2A8E8EC000A924C1 /* GifListCollectionCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16A8B71E2A8D012800C71625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16A8B7282A8D012800C71625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16A8B7062A8D012700C71625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D9156C2A8E8EC000A924C1 /* GifListCollectionCell.swift in Sources */,
+				16A8B7412A8D042D00C71625 /* FavouriteVc.swift in Sources */,
+				16A8B7492A8D05E400C71625 /* GifDisplayCell.swift in Sources */,
+				16A82E962A8F35EB0095F0F5 /* GifImagesHandlerManager.swift in Sources */,
+				16D915582A8E23AB00A924C1 /* GifsNetworkManager.swift in Sources */,
+				16A82E942A8F35CE0095F0F5 /* GifHandlerManagerProtocol.swift in Sources */,
+				16D9154D2A8E225000A924C1 /* NetworkOperation.swift in Sources */,
+				16A82E9A2A8F42960095F0F5 /* FavouriteVcVM.swift in Sources */,
+				16D915512A8E227900A924C1 /* APIResult.swift in Sources */,
+				16A82E912A8F34C90095F0F5 /* UserDefaultsManager.swift in Sources */,
+				16A8B7122A8D012700C71625 /* ViewController.swift in Sources */,
+				16D9155A2A8E23C600A924C1 /* GifsNetworkManagerProtocol.swift in Sources */,
+				16D9154F2A8E226600A924C1 /* NetworkManager.swift in Sources */,
+				16D9155C2A8E240F00A924C1 /* GiftListVM.swift in Sources */,
+				16A8B70E2A8D012700C71625 /* AppDelegate.swift in Sources */,
+				16D915532A8E22FD00A924C1 /* GiftListModel.swift in Sources */,
+				16A8B73F2A8D039D00C71625 /* TabBarVc.swift in Sources */,
+				16D9155E2A8E24A200A924C1 /* UIImage+Gif.swift in Sources */,
+				16D914F72A8DDC6400A924C1 /* ApiEndPoints.swift in Sources */,
+				16A8B74D2A8D063A00C71625 /* GlobalEnums.swift in Sources */,
+				16A8B7102A8D012700C71625 /* SceneDelegate.swift in Sources */,
+				16A82E982A8F3AF70095F0F5 /* FavouriteGifHandler.swift in Sources */,
+				16D915562A8E238F00A924C1 /* GifsRepository.swift in Sources */,
+				16A8B7432A8D043E00C71625 /* GifListVc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16A8B71C2A8D012800C71625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A8B7252A8D012800C71625 /* EydsCanadaRecruitmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16A8B7262A8D012800C71625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A8B7312A8D012800C71625 /* EydsCanadaRecruitmentUITestsLaunchTests.swift in Sources */,
+				16A8B72F2A8D012800C71625 /* EydsCanadaRecruitmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16A8B7222A8D012800C71625 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16A8B7092A8D012700C71625 /* EydsCanadaRecruitment */;
+			targetProxy = 16A8B7212A8D012800C71625 /* PBXContainerItemProxy */;
+		};
+		16A8B72C2A8D012800C71625 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16A8B7092A8D012700C71625 /* EydsCanadaRecruitment */;
+			targetProxy = 16A8B72B2A8D012800C71625 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16A8B7132A8D012700C71625 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16A8B7142A8D012700C71625 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16A8B7182A8D012800C71625 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16A8B7192A8D012800C71625 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16A8B7322A8D012800C71625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		16A8B7332A8D012800C71625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16A8B7352A8D012800C71625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MTC3CHHUBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EydsCanadaRecruitment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.excellarate.EydsCanadaRecruitment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16A8B7362A8D012800C71625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MTC3CHHUBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EydsCanadaRecruitment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.excellarate.EydsCanadaRecruitment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		16A8B7382A8D012800C71625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MTC3CHHUBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.excellarate.EydsCanadaRecruitmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EydsCanadaRecruitment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EydsCanadaRecruitment";
+			};
+			name = Debug;
+		};
+		16A8B7392A8D012800C71625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MTC3CHHUBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.excellarate.EydsCanadaRecruitmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EydsCanadaRecruitment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EydsCanadaRecruitment";
+			};
+			name = Release;
+		};
+		16A8B73B2A8D012800C71625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MTC3CHHUBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.excellarate.EydsCanadaRecruitmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EydsCanadaRecruitment;
+			};
+			name = Debug;
+		};
+		16A8B73C2A8D012800C71625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MTC3CHHUBC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.excellarate.EydsCanadaRecruitmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EydsCanadaRecruitment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16A8B7052A8D012700C71625 /* Build configuration list for PBXProject "EydsCanadaRecruitment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16A8B7322A8D012800C71625 /* Debug */,
+				16A8B7332A8D012800C71625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16A8B7342A8D012800C71625 /* Build configuration list for PBXNativeTarget "EydsCanadaRecruitment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16A8B7352A8D012800C71625 /* Debug */,
+				16A8B7362A8D012800C71625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16A8B7372A8D012800C71625 /* Build configuration list for PBXNativeTarget "EydsCanadaRecruitmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16A8B7382A8D012800C71625 /* Debug */,
+				16A8B7392A8D012800C71625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16A8B73A2A8D012800C71625 /* Build configuration list for PBXNativeTarget "EydsCanadaRecruitmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16A8B73B2A8D012800C71625 /* Debug */,
+				16A8B73C2A8D012800C71625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16A8B7022A8D012700C71625 /* Project object */;
+}
